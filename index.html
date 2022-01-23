@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Markdown Editor</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+   
+    
+    <div class="toggle"> 
+        <button onclick="expand();" style="border: none;
+                                           background: transparent;
+                                           margin-left: 2%;">
+            <img src="burg.png" height="50" width="50" alt="Open/Close preview">
+        </button>
+    </div>
+
+    <div class="head">
+        Markdown Editor
+    </div>
+
+
+
+    <div class="wrapper">
+        <div class="view">
+        <div id="preview" class="container">
+            
+        </div>
+    </div>
+        <div class="editor" id="editor" contenteditable="true">
+            # Markdown Editor
+            <br>&#60;br&#62;
+            <br><br>
+            Clear and edit the content on the lef in markdown language to get a Live preview of the compiled version on right.
+            <br><br>
+            &#60;br&#62;
+             &nbsp;  &nbsp; click the  &#60;img src="burg.png" width=25&#62;  button to change *preview* and *editor* view
+            <br><br>&#60;br&#62;
+            &#60;br&#62;
+            
+            This webpage is based on  **[Marked](https://github.com/markedjs/marked)**
+            , a live markdown converter. Once loaded up, you could use this editor in offline-mode as well.
+            <br><br>&#60;br&#62;
+            author : [@bRuttaZz](https://github.com/bRuttaZz) 
+            <br><br>
+            &#60;br&#62;
+
+            ``For Markdown Syntax : ``
+            <br>* [basic syntax](https://www.markdownguide.org/basic-syntax/)
+            <br>* [extended syntax](https://www.markdownguide.org/extended-syntax/)
+            <!-- <div id="editor" class="container" contenteditable="true">
+                # Changes here
+
+            </div> -->
+        </div>
+        
+    </div>
+
+    <div class="editor_text"><img src="edit.png" width="18px"> &nbsp;Editor</div>
+    <div class="preview_text"><img src="preview.png" width="18px"> &nbsp;Preview</div>
+    
+    <script src="main.js"></script>
+ 
+</body>
+
+</html>
+
