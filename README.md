@@ -1,5 +1,4 @@
 # SimpleMarkdownEditor
-# Markdown Editor
 
 A javascript markdown editor using Marked. Works in client side browser. [Visit]("https://bruttazz.github.io/SimpleMarkdownEditor")
 
