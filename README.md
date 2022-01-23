@@ -12,6 +12,7 @@ Clear and edit the content on the lef in markdown language to get a Live preview
 <br> author : [@bRuttaZz](https://github.com/bRuttaZz)
 
 <br> 
+
 > For Markdown Syntax : 
 > * [basic syntax](https://www.markdownguide.org/basic-syntax/)
 > * [extended syntax](https://www.markdownguide.org/extended-syntax/) 
