@@ -49,6 +49,73 @@
       transition: all 0.5s linear;
     }
 
+
+
+     /* chech box */
+
+    .auto_save {
+      position: fixed;
+      top:94px;
+      left: 13vw;
+      color: rgb(107, 107, 107);
+      display: block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .auto_save input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 4px;
+      left: 4.5px;
+      height: 16px;
+      width: 16px;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+
+    .auto_save:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    .auto_save input:checked ~ .checkmark {
+      background-color: #1b5c20;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .auto_save input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .auto_save .checkmark:after {
+      left: 5px;
+      top: 2px;
+      width: 3px;
+      height: 8px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+
     .preview_text{
       position: fixed;
       top: 95px;
@@ -148,6 +215,13 @@
           left: 5vw;
           opacity: 0;
         }
+
+        .auto_save{
+          left: auto;
+          right: 5vw;
+        }
+
+        
           
         body.active .wrapper .editor{
             left: 0;

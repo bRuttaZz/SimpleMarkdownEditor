@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
         <button onclick="expand();" style="border: none;
                                            background: transparent;
                                            margin-left: 2%;">
-            <img src="burg.png" height="50" width="50" alt="Open/Close preview">
+            <img src="images/burg.png" height="50" width="50" alt="Open/Close preview">
         </button>
     </div>
 
@@ -41,10 +41,12 @@
             # Markdown Editor
             <br>&#60;br&#62;
             <br><br>
-            Clear and edit the content on the lef in markdown language to get a Live preview of the compiled version on right.
+            Clear and edit the content on the left in markdown language to get a Live preview of the compiled version on right.
             <br><br>
             &#60;br&#62;
-             &nbsp;  &nbsp; click the  &#60;img src="https://raw.githubusercontent.com/bRuttaZz/SimpleMarkdownEditor/main/burg.png" width=25&#62;  button to change *preview* and *editor* view
+             &nbsp;  &nbsp; click the  &#60;img src="https://raw.githubusercontent.com/bRuttaZz/SimpleMarkdownEditor/main/images/burg.png" width=25&#62;  button to change *preview* and *editor* view.
+             This editor also incorporate an **auto save** option to locally save your edited text, so that you wont loose any text content on reload or accidental closure of current tab.
+
             <br><br>&#60;br&#62;
             &#60;br&#62;
             
@@ -66,10 +68,15 @@
         
     </div>
 
-    <div class="editor_text"><img src="edit.png" width="18px"> &nbsp;Editor</div>
-    <div class="preview_text"><img src="preview.png" width="18px"> &nbsp;Preview</div>
+    <div class="editor_text"><img src="images/edit.png" width="18px"> &nbsp;Editor</div>
+    <div class="preview_text"><img src="images/preview.png" width="18px"> &nbsp;Preview</div>
     
-    <script src="main.js"></script>
+    <label class="auto_save">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auto save
+        <input type="checkbox" checked="checked" id="auto_save">
+        <span class="checkmark"></span>
+    </label>
+
+    <script src="js/main.js"></script>
  
 </body>
 
